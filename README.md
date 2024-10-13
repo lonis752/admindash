@@ -1,0 +1,1 @@
+This project is from Odin Project to practice the grid layout with css and html.

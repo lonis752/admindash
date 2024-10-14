@@ -27,10 +27,11 @@ body {
 
 .sb1 {
     display: block;
+    margin-left: 1.2rem;
 }
 
 .sb1 > p,
-.sb1 > i {
+.sb1 > span {
     display: inline-block;
 }
 
@@ -68,7 +69,6 @@ body {
     display: grid;
     grid-template-columns: 1fr 10fr;
     align-items: center;
-    margin: auto;
 }
 
 .topnav .profile {
@@ -83,6 +83,10 @@ body {
 
 input {
     min-width: 50rem;
+    border-radius: 16px;
+    background-color: #bbb;
+    border: none;
+    height: 1.7rem;
 }
 
 .header{
@@ -139,7 +143,19 @@ input {
     border-radius: 16px;
     background-color: white;
     padding: 0px 15px 5px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 1fr;
+}
 
+.project .words {
+    grid-column: span 2;
+}
+
+.project .icons {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    justify-self: end;
 }
 
 .highlights {
@@ -178,10 +194,10 @@ hr {
     border-radius: 12px;
     background-color: white;
     overflow-wrap: break-word;
-    margin: auto;
     padding: 2px 15px 2px;
     max-height: fit-content;
     gap: 1.2rem;
+    padding-left: 4.8rem;
 }
 
 .rightside {
